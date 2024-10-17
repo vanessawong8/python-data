@@ -1,0 +1,6 @@
+frutas = ("manzana", "banana", "cereza")
+frutas_buscar = input("Ingresa una fruta: ")
+if frutas_buscar in frutas:
+    print("La fruta está en la tupla.")
+else:
+    print("La fruta no está en la tupla.")
