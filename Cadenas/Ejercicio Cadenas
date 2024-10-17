@@ -1,0 +1,20 @@
+nombre = "VANESSA"
+apellido = "wong"
+frase = "Hola esta es una frase corta"
+
+longitud = len(nombre)
+print(longitud)
+
+print(apellido[0])
+
+palabras = frase.split()
+print(palabras)
+mayusculas  = apellido.upper()
+print(mayusculas)
+minuscula = nombre.lower()
+print(minuscula)
+
+mensaje = "hola mundo"
+print(mensaje)
+cambio = mensaje.replace("hola", "vanessa")
+print(cambio)
