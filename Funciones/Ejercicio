@@ -1,0 +1,28 @@
+def suma(a, b):
+    resultado = a+b
+    return resultado
+
+numero1 = int(input("Introduce un numero:"))
+numero2 = int(input("Introduce un segundo numero:"))
+
+resultado = suma(numero1, numero2)
+print(resultado)
+def espar(numero):
+    if numero % 2 == 0:
+        return True
+    else:
+        return False
+    
+numero = int(input("Introduce un numero:"))
+if espar(numero) == True:
+    print(f"{numero} es un numero par")
+else:
+    print(f"{numero} es un numero inpar")
+
+def listanumeros(lista):
+    maximo = max(lista)
+    return maximo
+
+numeros = [10, 40, 50, 55, 6]
+valor = listanumeros(numeros)
+print("El valor maximo almacenado en la  lista es:", valor)
