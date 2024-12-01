@@ -1,0 +1,19 @@
+class ContadorPalabras:
+    def __init__(self):
+        self.contador = 0
+
+    def contar(self, texto):
+        palabras = texto.split()
+        self.contador += len(palabras)
+
+    def obtener_contador(self):
+        return self.contador
+
+
+mi_contador = ContadorPalabras()
+
+texto = "Este es un ejemplo de contador para saber cuantas palabras tenemos en el texto de Python"
+mi_contador.contar(texto)
+
+resultado = mi_contador.obtener_contador()
+print("Número de palabras:", resultado)
