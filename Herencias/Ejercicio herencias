@@ -1,0 +1,24 @@
+class vehiculo:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+    def arrancar(self):
+        return f"{self.marca} {self.modelo} esta arrancando"
+    
+class coche(vehiculo):
+    def acelerar(self):
+        return f"{self.marca} {self.modelo} esta acelerando"
+    
+class motocicleta(vehiculo):
+    def caballito(self):
+        return f"{self.marca} {self.modelo} esta haciendo caballito"
+    
+cochee = coche ("Toyota", "Camry")
+motocicletaa = motocicleta ("Harley-Davidson", "Sportsers")
+
+print(f"Coche marca y modelo: {cochee.marca} {cochee.modelo}")
+print(f"motocicleta marca y modelo: {motocicletaa.marca} {motocicletaa.modelo}")
+
+print(cochee.acelerar())
+print(cochee.arrancar)
