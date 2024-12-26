@@ -22,3 +22,6 @@ print(f"motocicleta marca y modelo: {motocicletaa.marca} {motocicletaa.modelo}")
 
 print(cochee.acelerar())
 print(cochee.arrancar)
+
+print(cochee.arrancar())
+print(motocicletaa.arrancar())
