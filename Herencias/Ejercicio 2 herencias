@@ -1,0 +1,25 @@
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    @abstractmethod
+    def hablar(self):
+        pass
+
+class Perro(Animal):
+    def hablar(self):
+        return "Guau guau"
+
+class Gato(Animal):
+    def hablar(self):
+        return "Miaww miaw"
+
+perro = Perro("Kira")
+gato = Gato("Diana Rosa")
+
+print(f"{perro.nombre} dice: {perro.hablar()}")
+print(f"{gato.nombre} dice: {gato.hablar()}")
+
+
